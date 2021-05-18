@@ -4,12 +4,12 @@
 # @Author : Lemon_Tricy
 # @QQ: 2378807189
 # Copyright：湖南省零檬信息技术有限公司
-from python_class import lesson_06   # 从包导入函数文件
+from python_class import lesson_06   # 导入函数文件
 from test_data import test_date  # 导入测试数据 文件
 from selenium import webdriver
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
-# 调用函数  --1、 先参数取出来取value  2、 传参到函数调用里
+# 调用函数  --1、 先参数取出来  2、 传参到函数调用里
 url = test_date.url["url"]  # 取值 url
 user = test_date.login_date["username"] # 取值登录用户名
 pwd = test_date.login_date["password"] # 取值 登录的密码
